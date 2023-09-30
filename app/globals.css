@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar {
+	@apply h-1 w-0.5;
+}
+
+::-webkit-scrollbar-thumb {
+	@apply bg-indigo-600 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	@apply bg-indigo-600;
+}
+
+input:not(:focus):not(:placeholder-shown):invalid,
+textarea:not(:focus):not(:placeholder-shown):invalid {
+	@apply ring-2 ring-inset ring-rose-500;
+}
